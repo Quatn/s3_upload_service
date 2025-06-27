@@ -1,0 +1,21 @@
+{
+  "name": "upload_service",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Upload service that validates supabase authentication and uploads the file to a s3 bucket.",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --env-file .env.development server.js",
+    "start": "node --env-file .env.production server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "QuanNM",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.1"
+  }
+}
